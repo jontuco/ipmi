@@ -76,7 +76,6 @@ void draw(){
   line(467,106,477,112);
   line(477,112,485,114);
   noStroke();
-  //fill(#761A50,100);
   fill(0,70);
   ellipse(509,108,50,50);
   
@@ -104,11 +103,9 @@ void draw(){
   strokeWeight(2);
   line(571,0,571,159);
   
-  //sombra limón
+  //sombra limón piso
   noStroke();
   fill(0);
- triangle(646,340,659,318,688,320);
-  //fill(0,120);
   triangle(642,341,666,314,686,321);
   
   //lineas madera
@@ -218,7 +215,6 @@ void draw(){
   //ellipse(614-mouseX,271+mouseY,647-mouseX,330+mouseY); //moviendo la ellipse calculo que con la rotscion tengo que restar 108 en X y sumarle 186 en Y a las coordenadas de la ellipse para que esté inclinada pero en su sitio
   stroke(255);
   ellipse(506,457,539,516); //ellipse definitiva 
-  //rotate(PI/50); //anulo la rotación
   popMatrix();
   stroke(255);
   strokeWeight(2);
@@ -236,51 +232,33 @@ void draw(){
   ellipse(646,304,5,5);
   
  
-  //limon grande frente
-  
-  
-//ellipseMode(CORNERS);
-  
+  //limon grande frente  
   pushMatrix();
   translate(600,200);
   rotate(PI/11);
   fill(#9D9D31);
-    rect(118,23,70,75,30,35,50,50);
-
+  rect(118,23,70,75,30,35,50,50);
   ellipse(158,74,70,70);
   fill(#F6FA3F);
   ellipse(156,72,70,70);
-    fill(#A7944E,50);
+  fill(#A7944E,50);
   ellipse(156,72,70,70);
-
-  //fill(#9D9D31);
-  //rect(118,23,70,75,30,35,50,50);
   fill(#F6FA3F);
   rect(115,23,70,75,30,35,50,50);
   fill(#A7944E,50);
-  //ellipse(156,72,70,70);
   rect(115,23,70,75,30,35,50,50);
   popMatrix();
   fill(0,25);
   triangle(712,335,734,335,726,344);
   triangle(739,275,742,296,754,284);
   noStroke();
-  fill(#9D9D31);
-  //ellipse(730,265,767,340);  //sombra lateral
-  fill(#F6FA3F);
-  //ellipse(693,260,767,345);  //cuerpo
-  fill(#A7944E,50);           
-  //ellipse(693,260,767,345);  //cuerpo transparencia
   ellipseMode(CENTER);
   fill(255,235);
-  pushMatrix();
-  //rotate
   ellipse(718,298,40,63);
   fill(#BEBF8D,230);
   ellipse(718,290,13,22);
   fill(#BEBF8D,180);
   ellipse(718,295,27,40);
-  popMatrix();
   fill(#9D9D31);
   ellipse(759,307,30,30);
   fill(#F6FA3F);
@@ -315,15 +293,10 @@ void draw(){
   noStroke();
   fill(#761A47,120);
   ellipse(586,249,30,30);    //sombra pequeña dx inf
-  
   noFill();
   stroke(#D8464B);
   strokeWeight(2);
-  //bezier(546,154,524,179,579,135,605,168);
   bezier(550,156,529,182,579,132,605,165);
-  
-
-  
   noStroke();
   fill(0,70);
   ellipse(593,261,68,60);   //sombra dx inf
